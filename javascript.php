@@ -18,12 +18,12 @@
 	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 	var firebaseConfig = {
 		apiKey: "AIzaSyAv6Et9y-DguDTRP634xXyBo74ccI_CXBE",
-	  	authDomain: "qlhanhhoa-h2c.firebaseapp.com",
-	  	projectId: "qlhanhhoa-h2c",
-	  	storageBucket: "qlhanhhoa-h2c.appspot.com",
-	  	messagingSenderId: "190496227390",
-	  	appId: "1:190496227390:web:3caac44324ef98cebf116f",
-	  	measurementId: "G-VSVQWP854S"
+  		authDomain: "qlhanhhoa-h2c.firebaseapp.com",
+  		projectId: "qlhanhhoa-h2c",
+  		storageBucket: "qlhanhhoa-h2c.appspot.com",
+  		messagingSenderId: "190496227390",
+  		appId: "1:190496227390:web:660806912d01c2e1bf116f",
+  		measurementId: "G-1X9EZTEGEB"
 	};
 	// Initialize Firebase
 	firebase.initializeApp(firebaseConfig);
