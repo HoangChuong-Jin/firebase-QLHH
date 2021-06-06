@@ -13,7 +13,7 @@
                 <th width="5%">STT</th>
                 <th width="20%">Tên Hàng Hóa</th>
                 <th width="10%">Loại</th>
-                 <th width="10%">Nhà sản xuất</th>
+                <th width="10%">Nhà sản xuất</th>
                 <th width="10%">Số lượng</th>
                 <th width="10%">Giá gốc/ 1SP</th>
 
@@ -31,11 +31,11 @@
                     querySnapshot.forEach((doc) => {
                         output += '<tr>';
                             output += '<td>'+stt+'</td>';
-                            output += '<td>'+doc.data().TenHang+'</td>';
-                            output += '<td>'+doc.data().Loai+'</td>';
-                            output += '<td>'+doc.data().NhaSanXuat+'</td>';
-                            output += '<td>'+doc.data().SoLuong+'</td>';
-                            output += '<td>'+doc.data().GiaGoc+'</td>';
+                            output += '<td>'+doc.data().tenhang+'</td>';
+                            output += '<td>'+doc.data().loai+'</td>';
+                            output += '<td>'+doc.data().nhasanxuat+'</td>';
+                            output += '<td>'+doc.data().soluong+'</td>';
+                            output += '<td>'+doc.data().giagoc+'</td>';
                         output += '</tr>'; 
                         stt++;
 

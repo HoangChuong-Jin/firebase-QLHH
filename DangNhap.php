@@ -14,7 +14,7 @@
 
                 <div class="form-group">
                     <label for="Password">Password</label>
-                    <input type="password" class="form-control" id="Password" name="Password" required />
+                    <input type="password" class="form-control" class="pswrd" id="Password" name="Password" required />
                     <span class="show"></span>
                 </div>
                 
@@ -22,4 +22,5 @@
             </form>
         </div>
     </div>
+    <script src="js/Login.js"></script>
 </div>
