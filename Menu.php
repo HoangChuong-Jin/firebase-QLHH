@@ -3,16 +3,16 @@
 			<img src="img/H2C.png" alt="" >
     </div>
     <div class="left-content">
-        <ul role="tablist">
+        <ul>
             
-            <li role="presentation" class="active"><a href="#one" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-home"></i></span>Home</a></li>
+            <li role="presentation" id="Home" class="active"><a href="index.php" role="tab" data-toggle="tab" onclick="myFunction()"><span><i class="fa fa-home"></i></span>Home</a></li>
             
         <?php 
             session_start();
             if(!isset($_SESSION['uid']))
             {
         ?>
-            <li role="presentation"><a href="#LogIn" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-home"></i></span>Đăng nhập</a></li>
+            <li role="presentation"><a href="DangNhap.php" role="nav-link" data-toggle="nav-link" onclick="myFunction1()"><span><i class="fa fa-home"></i></span>Đăng nhập</a></li>
         <?php
             }
             else
@@ -29,7 +29,7 @@
 
             <li role="presentation" ><a href="#support" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-support"></i></span>Supports</a></li>
 
-            <li role="presentation" ><a href="#LogOn" aria-controls="home" role="tab" data-toggle="tab" onclick="myFunction()"><span><i class="fa fa-power-off"></i></span><?php echo $_SESSION['email'] ?> [Đăng xuất]</a></li>
+            <li role="presentation" ><a href="#LogOn" aria-controls="home" role="tab" data-toggle="tab" onclick="myFunction2()"><span><i class="fa fa-power-off"></i></span><?php echo $_SESSION['email'] ?> [Đăng xuất]</a></li>
         <?php
         }
         ?>
@@ -40,15 +40,9 @@
     </div>
 </div>
 
-<script>
-    function myFunction() {
-        <?php
-            //Xoá SESSTION
-            unset($_SESSION['uid']);
-            unset($_SESSION['email']);
-        ?>
-
-        firebase.auth().signOut();
-        location.href='index.php';
+<!--<script>
+    function myFuction1(){
+        var element = document.getElementById("Home");
+            element.style.backgroundColor='#FF0000';
     }
-</script>
+</script>-->

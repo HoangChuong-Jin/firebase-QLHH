@@ -18,17 +18,31 @@
 	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 	var firebaseConfig = {
 		apiKey: "AIzaSyBwMFi5wISCRS8cIy6Fa3hTeOC4HsbvJl8",
-  		authDomain: "qlhanghoa-h2c.firebaseapp.com",
-  		projectId: "qlhanghoa-h2c",
-  		storageBucket: "qlhanghoa-h2c.appspot.com",
-  		messagingSenderId: "886369258952",
-  		appId: "1:886369258952:web:18a5561b7983151412c4fd",
-  		measurementId: "G-9YRN9HX1NY"
+		authDomain: "qlhanghoa-h2c.firebaseapp.com",
+		projectId: "qlhanghoa-h2c",
+		storageBucket: "qlhanghoa-h2c.appspot.com",
+		messagingSenderId: "886369258952",
+		appId: "1:886369258952:web:18a5561b7983151412c4fd",
+		measurementId: "G-9YRN9HX1NY"
 	};
 	// Initialize Firebase
 	firebase.initializeApp(firebaseConfig);
 	firebase.analytics();
 	var db = firebase.firestore();
+</script>
+
+
+<script>
+    function myFunction() {
+        <?php
+            //Xoá SESSTION
+            unset($_SESSION['uid']);
+            unset($_SESSION['email']);
+        ?>
+
+        firebase.auth().signOut();
+        location.href='index.php';
+    }
 </script>
 
 <!--<script>
