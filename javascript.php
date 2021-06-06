@@ -1,6 +1,5 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
 
@@ -30,40 +29,3 @@
 	firebase.analytics();
 	var db = firebase.firestore();
 </script>
-
-
-<script>
-    function myFunction() {
-        <?php
-            //Xoá SESSTION
-            unset($_SESSION['uid']);
-            unset($_SESSION['email']);
-        ?>
-
-        firebase.auth().signOut();
-        location.href='index.php';
-    }
-</script>
-
-<!--<script>
-	var email='<?php echo $_POST['email']; ?>';
-	var password='<?php echo $_POST['Password']; ?>';
-	firebase.auth().signInWithEmailAndPassword(email,password)
-		.then((userCredential)=>{
-			var user = userCredential.user;
-			$.ajax({
-				type:'POST',
-				url:'DangNhap_ajax.php',
-				data: {
-					uid: user.uid,
-					email: user.email
-				},
-				dataType:'text',
-				success: function(response) {
-					location.href='index.php';
-				}
-			});
-		})
-		.catch((error)=>{
-	});
-</script>-->

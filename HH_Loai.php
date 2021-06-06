@@ -14,23 +14,7 @@
                     <img src="img/H2C.png" alt="" >
             </div>
             <div class="left-content">
-                <ul>
-                    
-                    <li role="presentation" ><a href="index.php"><span><i class="fa fa-home"></i></span>Home</a></li>
-                    
-                    <li role="presentation" ><a href="HH_Nhap.php"><span><i class="fa fa-sign-in"></i></span>Nhập Hàng</a></li>
-
-                    <li role="presentation" ><a href="HH_Xuat.php"><span><i class="fa fa-sign-out"></i></span>Xuất Hàng</a></li>
-
-                    <li role="presentation" ><a href="HH_HangHoa.php"><span><i class="fa fa-gift"></i></span>Hàng Hóa</a></li>
-
-                    <li role="presentation" class="active"><a href="HH_Loai.php"><span><i class="fa fa-th"></i></span>Phân Loại</a></li>
-
-                    <li role="presentation" ><a href="HH_Support.php"><span><i class="fa fa-support"></i></span>Supports</a></li>
-
-                    <li role="presentation" ><a href="#LogOn" onclick=""><span><i class="fa fa-power-off"></i></span>Đăng xuất</a></li>
-
-                </ul>
+                <?php include "Menu.php"; ?> 
             </div>
             <div class="copyright">
                 <p> <a href="">@Hằng </a> <a href="">@Hương </a> <a href="">@Chương</a>
@@ -58,14 +42,8 @@
                                 <th width="10%">Xóa</th>
                             </tr>
                         </thead>
-                        <tr>
-                            <td>1</td>
-                            <td>Thời trang nam</td>
-                            <td>Mẫu 2010</td>
-
-                            <td><a href="HH_Loai_Sua.php"><i class="fa fa-edit"></i></a></td>
-                            <td><a href="#"><i class="fa fa-trash"></i></a></td>
-                        </tr>
+                        <tbody id= "HienThi" >
+                        </tbody>  
                     </table>
                 </div>
 
@@ -74,7 +52,27 @@
     </div>
 
 <!-- Javascript -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <?php include "Javascript.php"; ?>
+    <script>
+        db.collection("phanloai").get().then((querySnapshot) => {
+                var stt=1;
+                var output= "";
+                querySnapshot.forEach((doc) => {
+                    output += '<tr>';
+                        output += '<td>'+stt+'</td>';
+                        output += '<td>'+doc.data().tenloai+'</td>';
+                        output += '<td>'+doc.data().ghichu+'</td>';
+                        output+='<td><a href="HH_Loai_Sua.php?id='+doc.id+'"><i class="fa fa-edit"></i></a></td>';
+                        output+='<td><a onclick="return confirm(\'Bạn có muốn xóa loại hàng hóa '+doc.data().tenhang+' không ???\')" href="HH_Loai_Xoa.php?id='+doc.id+'"><i class="fa fa-trash"></a></td>';
+                    output += '</tr>'; 
+                    stt++;
+
+            });
+            //console.log(output);
+            $('#HienThi').html(output);
+        });
+    </script> 
     
 </body>
 </html>

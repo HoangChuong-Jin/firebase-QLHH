@@ -15,7 +15,6 @@
             </div>
             <div class="left-content">
                 <ul>
-                    <li role="presentation"><a href="index.php"><span><i class="fa fa-home"></i></span>Home</a></li>
                     <li role="presentation" class="active"><a href="DangNhap.php" ><span><i class="fa fa-home"></i></span>Đăng nhập</a></li>
                 </ul>
             </div>

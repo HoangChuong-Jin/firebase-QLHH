@@ -15,8 +15,6 @@
 		    </div>
 		    <div class="left-content">
 		        <ul role="tablist">
-		            <li role="presentation"><a href="#one" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-home"></i></span>Home</a></li>
-
 		            <li role="presentation" class="active"><a href="#LogIn" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-home"></i></span>Đăng nhập</a></li>
 		        </ul>
 		    </div>

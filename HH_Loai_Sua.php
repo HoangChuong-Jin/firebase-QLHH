@@ -14,23 +14,7 @@
                     <img src="img/H2C.png" alt="" >
             </div>
             <div class="left-content">
-                <ul>
-                    
-                    <li role="presentation" ><a href="index.php"><span><i class="fa fa-home"></i></span>Home</a></li>
-                    
-                    <li role="presentation" ><a href="HH_Nhap.php"><span><i class="fa fa-sign-in"></i></span>Nhập Hàng</a></li>
-
-                    <li role="presentation" ><a href="HH_Xuat.php"><span><i class="fa fa-sign-out"></i></span>Xuất Hàng</a></li>
-
-                    <li role="presentation" ><a href="HH_HangHoa.php"><span><i class="fa fa-gift"></i></span>Hàng Hóa</a></li>
-
-                    <li role="presentation" class="active"><a href="HH_Loai.php"><span><i class="fa fa-th"></i></span>Phân Loại</a></li>
-
-                    <li role="presentation" ><a href="HH_Support.php"><span><i class="fa fa-support"></i></span>Supports</a></li>
-
-                    <li role="presentation" ><a href="#LogOn" onclick=""><span><i class="fa fa-power-off"></i></span>Đăng xuất</a></li>
-
-                </ul>
+                <?php include "Menu.php"; ?> 
             </div>
             <div class="copyright">
                 <p> <a href="">@Hằng </a> <a href="">@Hương </a> <a href="">@Chương</a>
@@ -51,16 +35,16 @@
                             <form action="" method="post">
 
                                 <div class="form-group">
-                                    <label for="MaLoai">Tên Loại</label>
-                                    <input type="text" class="form-control" id="MaLoai" name="MaLoai" required />
+                                    <label for="tenloai">Tên Loại</label>
+                                    <input type="text" class="form-control" id="tenloai" name="tenloai" required />
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="TenLoai">Ghi chú</label>
-                                    <input type="text" class="form-control" id="TenLoai" name="TenLoai" required />
+                                    <label for="ghichu">Ghi chú</label>
+                                    <input type="text" class="form-control" id="ghichu" name="ghichu" required />
                                 </div>
 
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Thêm vào CSDL</button>
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Cập nhật</button>
                             </form>
                         </div>
                     </div>
@@ -71,7 +55,46 @@
     </div>
 
 <!-- Javascript -->
-    <?php include "Javascript.php"; ?>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <?php include "Javascript.php"; ?>      
+    <script>
+        var docRef = db.collection("phanloai").doc("<?php echo $_GET['id'];?>");
+        docRef.get().then((doc) => {
+            if (doc.exists) {
+                //console.log("Document data:", doc.data
+                $('#id').val(doc.id);
+                $('#tenloai').val(doc.data().tenloai);
+                $('#ghichu').val(doc.data().ghichu);  
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+            }
+        }).catch((error) => {
+            console.log("Error getting document:", error);
+        });
+    </script>
+    <?php
+        if(isset($_POST['tenloai'])){
+    ?>
+            <script>
+                var docRef = db.collection("phanloai").doc("<?php echo $_POST['id'];?>");
+                
+                    docRef.update({
+                    tenloai: "<?php echo $_POST['tenloai'];?>",
+                    ghichu: "<?php echo $_POST['ghichu'];?>" 
+                })
+                .then(() => {
+                    //console.log("Document successfully updated!");
+                    location.href="HH_Loai.php";
+                })
+                .catch((error) => {
+                    // The document probably doesn't exist.
+                    console.error("Error updating document: ", error);
+                }); 
+
+            </script>
+    <?php
+    }
+    ?>
 </body>
 </html>
