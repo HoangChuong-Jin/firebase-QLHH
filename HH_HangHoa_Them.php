@@ -6,7 +6,8 @@
 
 </head>
 <body>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <?php include "Javascript.php"; ?>
     <div class="wrapper">
         <!-- Menu -->
         <?php include "Menu.php"; ?>
@@ -15,7 +16,7 @@
             <div class="right-content">
 <!-- Phần nhập hàng hóa thêm -->
                 <div id="HangHoaThem">
-                    <h1> Phần Thêm hàng hóa </h1>
+                    <h1> Phần thêm hàng hóa </h1>
 
                     <a href="HH_HangHoa.php"><span><i class="fa fa-gift"></i></span> Danh sách hàng hóa</a> <br></br>
 
@@ -31,7 +32,8 @@
 
                                 <div class="form-group">
                                     <label for="Loai">Loại</label>
-                                    <input type="text" class="form-control" id="Loai" name="Loai" required />
+                                    <select type="text" class="form-control" id="Loai" name="Loai" required >  
+                                    </select>
                                 </div>
 
                                 <div class="form-group">
@@ -44,6 +46,9 @@
                                     <select type="text" class="form-control" id="Donvitinh" name="Donvitinh" required >
                                         <option value="">Vui lòng chọn</option>
                                         <option value="Chai">Chai</option>
+                                        <option value="Lon">Bịt</option>
+                                        <option value="Lon">Hộp</option>
+                                        <option value="Lon">Cục</option>
                                         <option value="Lon">Lon</option>
                                         <option value="Cai">Cái</option>
                                         <option value="Ly">Ly</option>
@@ -71,9 +76,15 @@
     </div>
 
 <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <?php include "Javascript.php"; ?>
-    
+     <script>
+       let output
+       db.collection("phanloai").get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+            output+='<option value="'+doc.data().tenloai+'">'+doc.data().tenloai+'</option>';
+        })
+            document.getElementById("Loai").innerHTML = output
+        }); 
+    </script>
     <?php
     if(isset($_POST['TenHangHoa'])){
     ?>

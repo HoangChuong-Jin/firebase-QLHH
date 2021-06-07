@@ -6,7 +6,8 @@
 
 </head>
 <body>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <?php include "Javascript.php"; ?>
     <div class="wrapper">
         <!-- Menu -->
         <?php include "Menu.php"; ?>
@@ -20,20 +21,22 @@
                     <div class="card mt-3">
                         <h5 class="card-header">Thông tin xuất hàng hóa</h5>
                         <div class="card-body">
-                            <form action="" method="post">
+                            <form action="HH_Xuat.php" method="post">
                                 <div class="form-group">
                                     <label for="NgayXuat">Ngày Xuất</label>
-                                    <input type="text" class="form-control" id="NgayXuat" name="NgayXuat" required />
+                                    <input type="date" class="form-control" id="NgayXuat" name="NgayXuat" required />
                                 </div>
 
                                 <div class="form-group">
                                     <label for="TenHangHoa">Tên Hàng hóa</label>
-                                    <input type="text" class="form-control" id="TenHangHoa" name="TenHangHoa" required />
+                                    <select type="text" class="form-control" id="TenHangHoa" name="TenHangHoa" required >  
+                                    </select>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="Loai">Loại</label>
-                                    <input type="text" class="form-control" id="Loai" name="Loai" required />
+                                    <select type="text" class="form-control" id="Loai" name="Loai" required >  
+                                    </select>
                                 </div>
 
                                 <div class="form-group">
@@ -62,7 +65,49 @@
     </div>
 
 <!-- Javascript -->
-    <?php include "Javascript.php"; ?>
+    <script>
+       let output
+       db.collection("phanloai").get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+            output+='<option value="'+doc.data().tenloai+'">'+doc.data().tenloai+'</option>';
+        });
+            document.getElementById("Loai").innerHTML = output
+        }); 
+    </script>
+    <script>
+       let output2
+       db.collection("hanghoa").get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+            output2+='<option value="'+doc.data().tenhang+'">'+doc.data().tenhang+'</option>';
+        });
+            console.log(output2);
+            document.getElementById("TenHangHoa").innerHTML = output2
+        }); 
+    </script>
+    <?php
+    if(isset($_POST['TenHangHoa'])){
+    ?>
+        <script>
+            db.collection("xuat").add({
+                ngayxuat: "<?php echo $_POST['NgayXuat'];?>",
+                tenhang: "<?php echo $_POST['TenHangHoa'];?>",
+                loai: "<?php echo $_POST['Loai'];?>",
+                soluong: "<?php echo $_POST['SoLuong'];?>",
+                giaban: "<?php echo $_POST['GiaBan'];?>",
+                thanhtien: "<?php echo $_POST['ThanhTien'];?>" 
+            })
+            .then((docRef) => {
+                //console.log("Document written with ID: ", docRef.id);
+                location.href="HH_DS_Xuat.php";
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+            });
+
+        </script>
+    <?php
+    }
+    ?>
     
 </body>
 </html>

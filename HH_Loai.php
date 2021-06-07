@@ -54,7 +54,7 @@
                         output += '<td>'+doc.data().tenloai+'</td>';
                         output += '<td>'+doc.data().ghichu+'</td>';
                         output+='<td><a href="HH_Loai_Sua.php?id='+doc.id+'"><i class="fa fa-edit"></i></a></td>';
-                        output+='<td><a onclick="return confirm(\'Bạn có muốn xóa loại hàng hóa '+doc.data().tenhang+' không ???\')" href="HH_Loai_Xoa.php?id='+doc.id+'"><i class="fa fa-trash"></a></td>';
+                        output+='<td><a onclick="return confirm(\'Bạn có muốn xóa loại '+doc.data().tenloai+' không ???\')" href="HH_Loai_Xoa.php?id='+doc.id+'"><i class="fa fa-trash"></a></td>';
                     output += '</tr>'; 
                     stt++;
 

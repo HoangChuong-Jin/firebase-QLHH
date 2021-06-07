@@ -4,7 +4,7 @@
     </div>
     <div class="left-content">
         <ul id="menu">          
-            <li role="presentation" class="active"><a href="index.php"><span><i class="fa fa-home"></i></span>Home</a></li>
+            <li role="presentation" class="hover"><a href="index.php"><span><i class="fa fa-home"></i></span>Home</a></li>
 
         <?php 
             session_start();
@@ -29,7 +29,7 @@
             <li role="presentation" class="hover"><a href="HH_DS_Xuat.php"><span><i class="fa fa-file"></i></span>Danh sách xuất</a></li>
 
             <li role="presentation" class="hover"><a href="HH_Support.php"><span><i class="fa fa-support"></i></span>Supports</a></li>        
-            <li role="presentation" class="hover"><a href="DangXuat.php"><span><i class="fa fa-power-off"></i></span><!--<?php echo $_SESSION['email'] ?>--> [Đăng xuất]</a></li>
+            <li role="presentation" ><a href="DangXuat.php"><span><i class="fa fa-power-off"></i></span><?php echo $_SESSION['email']?> [Đăng xuất]</a></li>
         <?php
         }
         ?>

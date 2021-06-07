@@ -15,7 +15,7 @@
             <div class="right-content">
 <!-- Phần Loại Thêm-->
                 <div id="LoaiThem">
-                    <h1> Phần Thêm loại hàng </h1>
+                    <h1> Phần thêm loại hàng </h1>
 
                     <a href="HH_Loai.php"><span><i class="fa fa-th"></i></span> Danh sách loại hàng</a> <br></br>
 
@@ -45,7 +45,28 @@
     </div>
 
 <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <?php include "Javascript.php"; ?>
     
+    <?php
+    if(isset($_POST['tenloai'])){
+    ?>
+        <script>
+            db.collection("phanloai").add({
+                tenloai: "<?php echo $_POST['tenloai'];?>",
+                ghichu: "<?php echo $_POST['ghichu'];?>"
+            })
+            .then((docRef) => {
+                //console.log("Document written with ID: ", docRef.id);
+                location.href="HH_Loai.php";
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+            });
+
+        </script>
+    <?php
+    }
+    ?>
 </body>
 </html>

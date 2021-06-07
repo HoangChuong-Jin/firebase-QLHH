@@ -15,15 +15,15 @@
             <div class="right-content">
 <!-- Phần Sửa Thêm-->
                 <div id="LoaiThem">
-                    <h1> Phần Sửa loại hàng </h1>
+                    <h1> Phần sửa loại hàng </h1>
 
                     <a href="HH_Loai.php"><span><i class="fa fa-th"></i></span> Danh sách loại hàng</a> <br></br>
 
                     <div class="card mt-3">
                         <h5 class="card-header">Thông tin loại hàng</h5>
                         <div class="card-body">
-                            <form action="" method="post">
-
+                            <form action="HH_Loai_Sua.php" method="post">
+                                <input type="text" id="id" name="id" hidden >
                                 <div class="form-group">
                                     <label for="tenloai">Tên Loại</label>
                                     <input type="text" class="form-control" id="tenloai" name="tenloai" required />

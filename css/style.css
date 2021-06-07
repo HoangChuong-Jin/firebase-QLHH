@@ -36,7 +36,7 @@ a:hover, a:focus {
     position: fixed;
     left: 0px;
     top: 0px;
-    width: 300px;
+    width: 330px;
     height: 100%;
     background-color: #2A0A29;
 }
@@ -65,6 +65,9 @@ a:hover, a:focus {
 }
 .left-content ul li.active a span {
     border-color: #22313F;
+}
+.left-content ul li:hover {
+    background-color: #FF0000;
 }
 .left-content ul li a {
     color: #fff;

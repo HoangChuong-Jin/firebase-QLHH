@@ -17,9 +17,9 @@
     <?php include "Javascript.php"; ?>
     
         <script>
-            db.collection("phanloai").doc("<?php echo $_GET['id'];?>").delete().then(() => {
+            db.collection("nhap").doc("<?php echo $_GET['id'];?>").delete().then(() => {
             //console.log("Document successfully deleted!");
-                location.href="HH_Loai.php";
+                location.href="HH_DS_Nhap.php";
             }).catch((error) => {
                 console.error("Error removing document: ", error);
             });
