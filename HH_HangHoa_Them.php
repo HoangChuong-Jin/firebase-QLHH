@@ -9,17 +9,7 @@
 
     <div class="wrapper">
         <!-- Menu -->
-        <div class="left-side">
-            <div class="logo">
-                    <img src="img/H2C.png" alt="" >
-            </div>
-            <div class="left-content">
-                <?php include "Menu.php"; ?> 
-            </div>
-            <div class="copyright">
-                <p> <a href="">@Hằng </a> <a href="">@Hương </a> <a href="">@Chương</a>
-            </div>
-        </div>
+        <?php include "Menu.php"; ?>
         
         <div class="right-side">
             <div class="right-content">
@@ -83,6 +73,7 @@
 <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <?php include "Javascript.php"; ?>
+    
     <?php
     if(isset($_POST['TenHangHoa'])){
     ?>

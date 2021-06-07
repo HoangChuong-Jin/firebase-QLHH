@@ -9,19 +9,7 @@
 
     <div class="wrapper">
         <!-- Menu -->
-        <div class="left-side">
-            <div class="logo">
-                    <img src="img/H2C.png" alt="" >
-            </div>
-            <div class="left-content">
-                <ul>
-                    <li role="presentation" class="active"><a href="DangNhap.php" ><span><i class="fa fa-home"></i></span>Đăng nhập</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p> <a href="">@Hằng </a> <a href="">@Hương </a> <a href="">@Chương</a>
-            </div>
-        </div>
+        <?php include "Menu.php"; ?>
         
         <div class="right-side">
             <div class="right-content">

@@ -15,9 +15,9 @@
             <div class="right-content">
 <!-- Phần Phân loại-->
                 <div id="six">
-                    <h1> Loại hàng hóa </h1>
+                    <h1> Danh sách xuất hàng </h1>
 
-                    <a href="HH_Loai_Them.php"><span><i class="fa fa-plus"></i></span> Thêm loại</a>
+                    <a href="HH_DS_Nhap.php"><span><i class="fa fa-file"></i></span> Danh sách nhập hàng</a>
 
                     <br></br>
                     <div>Thông tin loại</div>
@@ -42,6 +42,8 @@
     </div>
 
 <!-- Javascript -->
+<?php include "Javascript.php"; ?>
+
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <?php include "Javascript.php"; ?>
     <script>

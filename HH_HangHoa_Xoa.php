@@ -9,23 +9,13 @@
 
     <div class="wrapper">
         <!-- Menu -->
-        <div class="left-side">
-            <div class="logo">
-                    <img src="img/H2C.png" alt="" >
-            </div>
-            <div class="left-content">
-                <?php include "Menu.php"; ?> 
-            </div>
-            <div class="copyright">
-                <p> <a href="">@Hằng </a> <a href="">@Hương </a> <a href="">@Chương</a>
-            </div>
-        </div>
+        <?php include "Menu.php"; ?>
         
     </div>
 
 <!-- Javascript -->
     <?php include "Javascript.php"; ?>
-    <?php include "javascript.php"; ?>
+    
         <script>
             db.collection("hanghoa").doc("<?php echo $_GET['id'];?>").delete().then(() => {
             //console.log("Document successfully deleted!");

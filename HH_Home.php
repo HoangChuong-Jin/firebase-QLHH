@@ -1,5 +1,5 @@
 <!-- Phần Home -->
-<div id="one" class="content active fade in">
+<div id="one">
     <img id="TieudeLG" src="img/H2C.png" alt="" >
     <h1>QUẢN LÝ HÀNG HÓA</h1>
     <p> Đây là phần thông tin trang web của tui mình OK !</p>
