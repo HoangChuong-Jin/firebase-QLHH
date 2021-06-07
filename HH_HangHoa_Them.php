@@ -46,11 +46,11 @@
                                     <select type="text" class="form-control" id="Donvitinh" name="Donvitinh" required >
                                         <option value="">Vui lòng chọn</option>
                                         <option value="Chai">Chai</option>
-                                        <option value="Lon">Bịt</option>
-                                        <option value="Lon">Hộp</option>
-                                        <option value="Lon">Cục</option>
+                                        <option value="Bịt">Bịt</option>
+                                        <option value="Hộp">Hộp</option>
+                                        <option value="Cục">Cục</option>
                                         <option value="Lon">Lon</option>
-                                        <option value="Cai">Cái</option>
+                                        <option value="Cái">Cái</option>
                                         <option value="Ly">Ly</option>
                                     </select>
                                 </div>
