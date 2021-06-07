@@ -41,12 +41,13 @@
 
                                 <div class="form-group">
                                     <label for="SoLuong">Số lượng</label>
-                                    <input type="number" max= "1000" min = "0" class="form-control" id="SoLuong" name="SoLuong" required />
+                                    <input type="number" max= "1000" min = "0" class="form-control" id="SoLuong" name="SoLuong" 
+                                    onchange="tinh()" required />
                                 </div>
 
                                 <div class="form-group">
                                     <label for="GiaBan">Giá bán</label>
-                                    <input type="text" class="form-control" id="GiaBan" name="GiaBan" required />
+                                    <input type="text" class="form-control" id="GiaBan" name="GiaBan" onchange="tinh()" required />
                                 </div>
 
                                 <div class="form-group">
@@ -65,6 +66,19 @@
     </div>
 
 <!-- Javascript -->
+    <script>
+        function tinh(){
+            let tong
+            var x = document.querySelector('#SoLuong').value;
+            var y = document.getElementById("GiaBan").value;
+
+            x = parseFloat(x); 
+            y = parseFloat(y);
+            tong = x * y ;
+            document.getElementById("ThanhTien").value = tong;
+        } 
+
+    </script>
     <script>
        let output
        db.collection("phanloai").get().then((querySnapshot) => {
