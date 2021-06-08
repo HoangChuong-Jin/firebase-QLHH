@@ -10,4 +10,5 @@
 
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style_home.css">
 <link rel="icon" href="img/H2C.png">
