@@ -1,4 +1,4 @@
-var input = document.querySelector('.pswrd');
+var input = document.getElementById("Password");
 var show = document.querySelector('.show');
 show.addEventListener('click', active);
 function active(){

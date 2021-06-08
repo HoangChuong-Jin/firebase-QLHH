@@ -42,7 +42,7 @@
                                     <label for="Donvitinh">Đơn vị tính</label>
                                     <select type="text" class="form-control" id="Donvitinh" name="Donvitinh" >
                                         <option value=""></option>
-                                         <option value="Chai">Chai</option>
+                                        <option value="Chai">Chai</option>
                                         <option value="Bịt">Bịt</option>
                                         <option value="Hộp">Hộp</option>
                                         <option value="Cục">Cục</option>

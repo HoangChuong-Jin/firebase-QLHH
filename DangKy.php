@@ -16,12 +16,12 @@
 <!-- Phần Home -->
 <!-- Phần đăng nhập -->
                 <div id="LogIn">
-                    <h1> Phần đăng nhập </h1>
+                    <h1> Phần đăng ký </h1>
 
                     <div class="card mt-3">
-                        <h5 class="card-header">Thông tin đăng nhập</h5>
+                        <h5 class="card-header">Thông tin đăng ký</h5>
                         <div class="card-body">
-                            <form action="DangNhap_Xuly.php" method="post">
+                            <form action="DangKy.php" method="post">
 
                                 <div class="form-group">
                                     <label for="email">Email</label>
@@ -33,11 +33,7 @@
                                     <input type="password" class="form-control" class="pswrd" id="Password" name="Password" required />
                                     <span class="show"></span>
                                 </div>
-                                
-                                <button type="submit" class="btn btn-primary"><i class=""></i> Đăng nhập</button>
-                                <div class="signup">
-                                    Bạn chưa có tài khoản? <a href="DangKy.php">Đăng ký</a>
-                                </div>
+                                <button type="submit" class="btn btn-primary"><i class=""></i> Đăng ký</button>
                             </form>
                         </div>
                     </div>
@@ -49,6 +45,24 @@
 
 <!-- Javascript -->
     <?php include "Javascript.php"; ?>
+    <script >
+        var email='<?php echo $_POST['email']; ?>';
+        var password='<?php echo $_POST['Password']; ?>';
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            // Signed in 
+            var user = userCredential.user;
+            // ...
+            location.href='DangNhap.php';
+          })
+          .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ..
+            window.alert("Lỗi: "+errorMessage );
+      });
+
+    </script>
     
 </body>
 </html>

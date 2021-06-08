@@ -70,6 +70,7 @@
 				$('.card-text').hide();
 				$('#KetQua').show();
 				$('#ThongBao').html('Lỗi '+error.code+': '+error.message);
+				window.alert('Lỗi '+error.code+': '+error.message);
 		});
 	</script>
 </body>
