@@ -21,7 +21,7 @@
 							<span class="card-text" id="card-text" >Đã có lỗi xảy ra</span>
 							<div class="alert alert-danger alert-dismissible fade show mb-0" role ="alert">
 								<span id="ThongBao"></span>
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="window.location.href='DangNhap.php'">
 									<span aria-hidden="true">&times;</span>
 								</button>	
 							</div>
@@ -35,7 +35,6 @@
 <!-- Javascript -->
     <script>
 		$('#KetQua').hide();
-		$('#card-text').show();
 		var email='<?php echo $_POST['email']; ?>';
 		var password='<?php echo $_POST['Password']; ?>';
 		firebase.auth().signInWithEmailAndPassword(email,password)
@@ -55,6 +54,7 @@
 				});
 			})
 			.catch((error)=>{
+				$('#card-text').show();
 				$('#KetQua').show();
 				$('#ThongBao').html('Lỗi '+error.code+': '+error.message);
 		});
