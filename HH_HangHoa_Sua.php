@@ -72,7 +72,6 @@
     </div>
 
 <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <?php include "Javascript.php"; ?>        
     <script>
         var docRef = db.collection("hanghoa").doc("<?php echo $_GET['id'];?>");

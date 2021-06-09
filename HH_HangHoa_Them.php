@@ -32,7 +32,7 @@
 
                                 <div class="form-group">
                                     <label for="Loai">Loại</label>
-                                    <select type="text" class="form-control" id="Loai" name="Loai" required >  
+                                    <select type="text" class="form-control" id="Loai" name="Loai" required > 
                                     </select>
                                 </div>
 

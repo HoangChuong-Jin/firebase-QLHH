@@ -42,7 +42,6 @@
     </div>
 
 <!-- Javascript -->
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <?php include "Javascript.php"; ?>
     <script>
         db.collection("phanloai").get().then((querySnapshot) => {
