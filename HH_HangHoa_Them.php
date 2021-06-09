@@ -51,6 +51,7 @@
                                         <option value="Cục">Cục</option>
                                         <option value="Lon">Lon</option>
                                         <option value="Cái">Cái</option>
+                                        <option value="Lốc">Lốc</option>
                                         <option value="Ly">Ly</option>
                                     </select>
                                 </div>

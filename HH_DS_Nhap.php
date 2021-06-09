@@ -16,7 +16,6 @@
 <!-- Phần Phân loại-->
                 <div id="six">
                     
-                    <a href="HH_DS_Nhap.php"><span><i class="fa fa-file"></i></span> Danh sách nhập hàng</a>
                     <a href="HH_DS_Xuat.php"><span> &nbsp <i class="fa fa-file"></i></span> Danh sách xuất hàng</a>
 
                     <hr>
@@ -24,7 +23,7 @@
                     <h1> Danh sách nhập hàng </h1>
 
                     <br></br>
-                    <div>Thông tin loại</div>
+                    <div>Thông tin nhập</div>
                     <table class="table table-bordered table-hover table-sm mb-0">
                         <thead>
                             <tr>
