@@ -214,7 +214,7 @@
 					<p>
 						<hr id="hr_GT2">
 						<h2 class="text-left"><b>DANH SÁCH NHẬP</b></h2>
-						<p>Danh sách hiển thị các thông tin của hàng hóa và thời gian nhập hàng hóa, cập nhật thông tin nhập của hàng hóa trực tiếp, đơn giản và nhanh chóng.</p>
+						<p>Danh sách hiển thị các thông tin của hàng hóa và thời gian nhập hàng hóa.<br>Cập nhật thông tin nhập của hàng hóa trực tiếp, đơn giản và nhanh chóng.</p>
 					</p>
 				</div>
 			</div>
@@ -229,7 +229,7 @@
 				<div class="col-md-12 col-lg-6 text-justify">
 					<p>
 						<h2 class="text-left"><b>DANH SÁCH XUẤT</b></h2>
-						<p>Danh sách hiển thị các thông tin của hàng hóa và thời gian xuất hàng hóa cập nhật thông tin xuất của hàng hóa trực tiếp, đơn giản và nhanh chóng.</p>
+						<p>Danh sách hiển thị các thông tin của hàng hóa và thời gian xuất hàng hóa.<br>Cập nhật thông tin xuất của hàng hóa trực tiếp, đơn giản và nhanh chóng.</p>
 					</p>
 				</div>
 			</div>
