@@ -15,9 +15,12 @@
             <div class="right-content">
 <!-- Phần Phân loại-->
                 <div id="six">
-                    <h1> Danh sách xuất hàng </h1>
-
                     <a href="HH_DS_Nhap.php"><span><i class="fa fa-file"></i></span> Danh sách nhập hàng</a>
+                    <a href="HH_DS_Xuat.php"><span> &nbsp <i class="fa fa-file"></i></span> Danh sách xuất hàng</a>
+
+                    <hr>
+
+                    <h1> Danh sách xuất hàng </h1>
 
                     <br></br>
                     <div>Thông tin loại</div>

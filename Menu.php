@@ -25,8 +25,7 @@
 
             <li role="presentation" class="hover"><a href="HH_Loai.php"><span><i class="fa fa-th"></i></span>Phân Loại</a></li>
 
-            <li role="presentation" class="hover"><a href="HH_DS_Nhap.php"><span><i class="fa fa-tasks"></i></span>Danh sách nhập</a></li>
-            <li role="presentation" class="hover"><a href="HH_DS_Xuat.php"><span><i class="fa fa-tasks"></i></span>Danh sách xuất</a></li>
+            <li role="presentation" class="hover"><a href="HH_DS_Nhap.php"><span><i class="fa fa-tasks"></i></span>Danh sách</a></li>
 
             <li role="presentation" class="hover"><a href="HH_Support.php"><span><i class="fa fa-support"></i></span>Supports</a></li>        
             <li role="presentation" ><a href="DangXuat.php"><span><i class="fa fa-power-off"></i></span><?php echo $_SESSION['email']?> [Đăng xuất]</a></li>
