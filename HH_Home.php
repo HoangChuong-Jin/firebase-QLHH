@@ -121,7 +121,7 @@
 					<p>
 						<hr id="hr_GT1">
 						<h2><b>NHẬP HÀNG</b></h2>
-						<p>Thuật toán Dijkstra — giải bài toán nguồn đơn nếu tất cả các trọng số đều không âm. Thuật toán này có thể tính toán tất cả các đường đi ngắn nhất từ một đỉnh xuất phát cho trước s tới mọi đỉnh khác mà không làm tăng thời gian chạy.<br>Thuật toán Dijstra bình thường sẽ có độ phức tạp là O(n2 + m). Tuy nhiên ta có thể sử dụng kết hợp với cấu trúc heap, khi đó độ phức tạp sẽ là O((m + n)log(n)), nếu dùng Fibonacci Heap thì độ phức tạp giảm xuống còn O(m + nlogn). Trong đó m là số cạnh, n là số đỉnh của đồ thị đang xét.</p>
+						<p>Các thông tin của hàng hóa, tên, loại, thời gian, số lượng, đơn giá nhập. Các hàng hóa nhập được lưu lại và hiển thị chi tiết ở danh sách.<br>Việc cập nhật thông tin nhập của hàng hóa đơn giản và nhanh chóng.</p>
 					</p>
 				</div>
 				<div class="col-lg-6">
@@ -135,7 +135,7 @@
 				<div class="col-md-12 col-lg-6 text-justify">
 					<p>
 						<h2><b>XUẤT HÀNG</b></h2>
-						<p>Thuật toán Dijkstra — giải bài toán nguồn đơn nếu tất cả các trọng số đều không âm. Thuật toán này có thể tính toán tất cả các đường đi ngắn nhất từ một đỉnh xuất phát cho trước s tới mọi đỉnh khác mà không làm tăng thời gian chạy.<br>Thuật toán Dijstra bình thường sẽ có độ phức tạp là O(n2 + m). Tuy nhiên ta có thể sử dụng kết hợp với cấu trúc heap, khi đó độ phức tạp sẽ là O((m + n)log(n)), nếu dùng Fibonacci Heap thì độ phức tạp giảm xuống còn O(m + nlogn). Trong đó m là số cạnh, n là số đỉnh của đồ thị đang xét.</p>
+						<p>Các thông tin của hàng hóa, tên, loại, thời gian, số lượng, đơn giá xuất. Các hàng hóa xuất được lưu lại và hiển thị chi tiết ở danh sách.<br>Việc cập nhật thông tin xuất của hàng hóa đơn giản và nhanh chóng.</p>
 					</p>
 				</div>
 				<div class="col-lg-6">
@@ -164,7 +164,7 @@
 					<p>
 						<hr id="hr_GT2">
 						<h2 class="text-left"><b>MẶT HÀNG</b></h2>
-						<p>Thuật toán Bellman-Ford là một thuật toán tính các đường đi ngắn nhất nguồn đơn trong một đồ thị có hướng có trọng số (trong đó một số cung có thể có trọng số âm). Thuật toán Dijkstra giải cùng bài toán này tuy nhiên Dijkstra có thời gian chạy nhanh hơn, đơn giản là đòi hỏi trọng số của các cung phải có giá trị không âm.<br>Thuật toán Bellman-Ford chạy trong thời gian O(V.E), trong đó V là số đỉnh và E là số cung của đồ thị.</p>
+						<p>Cung cấp thông tin chi tiết về hàng hóa, tên, mã hàng hóa, nhà sản xuất, số lượng bao nhiêu, đơn giá ra sao,…<br>Thông tin về hàng hóa được trình bày theo các danh mục giúp việc kiểm kê, dễ dàng hơn trong việc quản lý thông tin hàng hóa.</p>
 					</p>
 				</div>
 			</div>
@@ -185,7 +185,7 @@
 					<p>
 						<hr id="hr_GT1">
 						<h2><b>PHÂN LOẠI</b></h2>
-						<p>Thuật toán Dijkstra — giải bài toán nguồn đơn nếu tất cả các trọng số đều không âm. Thuật toán này có thể tính toán tất cả các đường đi ngắn nhất từ một đỉnh xuất phát cho trước s tới mọi đỉnh khác mà không làm tăng thời gian chạy.<br>Thuật toán Dijstra bình thường sẽ có độ phức tạp là O(n2 + m). Tuy nhiên ta có thể sử dụng kết hợp với cấu trúc heap, khi đó độ phức tạp sẽ là O((m + n)log(n)), nếu dùng Fibonacci Heap thì độ phức tạp giảm xuống còn O(m + nlogn). Trong đó m là số cạnh, n là số đỉnh của đồ thị đang xét.</p>
+						<p>Hàng hóa được phân theo loại giúp việc nhập, xuất, kiểm kê, quản lý thông tin về hàng hóa trở nên dễ dàng.</p>
 					</p>
 				</div>
 				<div class="col-lg-6">
@@ -213,8 +213,8 @@
 				<div class="col-md-12 col-lg-6 text-justify">
 					<p>
 						<hr id="hr_GT2">
-						<h2 class="text-left"><b>LỊCH SỬ NHẬP</b></h2>
-						<p>Thuật toán Bellman-Ford là một thuật toán tính các đường đi ngắn nhất nguồn đơn trong một đồ thị có hướng có trọng số (trong đó một số cung có thể có trọng số âm). Thuật toán Dijkstra giải cùng bài toán này tuy nhiên Dijkstra có thời gian chạy nhanh hơn, đơn giản là đòi hỏi trọng số của các cung phải có giá trị không âm.<br>Thuật toán Bellman-Ford chạy trong thời gian O(V.E), trong đó V là số đỉnh và E là số cung của đồ thị.</p>
+						<h2 class="text-left"><b>DANH SÁCH NHẬP</b></h2>
+						<p>Danh sách hiển thị các thông tin của hàng hóa và thời gian nhập hàng hóa, cập nhật thông tin nhập của hàng hóa trực tiếp, đơn giản và nhanh chóng.</p>
 					</p>
 				</div>
 			</div>
@@ -228,8 +228,8 @@
 				</div>
 				<div class="col-md-12 col-lg-6 text-justify">
 					<p>
-						<h2 class="text-left"><b>LỊCH SỬ XUẤT</b></h2>
-						<p>Thuật toán Bellman-Ford là một thuật toán tính các đường đi ngắn nhất nguồn đơn trong một đồ thị có hướng có trọng số (trong đó một số cung có thể có trọng số âm). Thuật toán Dijkstra giải cùng bài toán này tuy nhiên Dijkstra có thời gian chạy nhanh hơn, đơn giản là đòi hỏi trọng số của các cung phải có giá trị không âm.<br>Thuật toán Bellman-Ford chạy trong thời gian O(V.E), trong đó V là số đỉnh và E là số cung của đồ thị.</p>
+						<h2 class="text-left"><b>DANH SÁCH XUẤT</b></h2>
+						<p>Danh sách hiển thị các thông tin của hàng hóa và thời gian xuất hàng hóa cập nhật thông tin xuất của hàng hóa trực tiếp, đơn giản và nhanh chóng.</p>
 					</p>
 				</div>
 			</div>
