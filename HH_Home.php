@@ -58,7 +58,7 @@
 
 	<!-- Welcom -->
 		<div class="container-fluid padding">
-			<div class="row welcom text-center slideanim">
+			<div class="row text-center slideanim" id="welcom">
 				<div class="col-12">
 					<h1 class="display-4" id="About"><br><b>WELCOME TO OUR WEBSITE</b></h1>
 					<hr>
@@ -80,7 +80,7 @@
 			</div>
 			<br>
 
-			<div class="row welcom text-center slideanim">
+			<div class="row welcom text-center slideanim btnHOME">
 				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 					<button class="btn_home">
 						<span><a href="#NhapXuat"> Quản lý nhập/xuất </a></span>
@@ -115,7 +115,7 @@
 			</div>
 		</div>
 
-		<div class="container-fluid padding">
+		<div class="container-fluid padding mauxam">
 			<div class="row padding slideanim amdi" id="Dijkstra">
 				<div class="col-md-12 col-lg-6 text-justify">
 					<p>
@@ -130,7 +130,7 @@
 			</div>
 		</div><br>
 
-		<div class="container-fluid padding">
+		<div class="container-fluid padding mauxam">
 			<div class="row padding slideanim amdi" id="Dijkstra">
 				<div class="col-md-12 col-lg-6 text-justify">
 					<p>
@@ -153,7 +153,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid padding">
+		<div class="container-fluid padding mauxam">
 			<div class="row padding slideanim" id="Ford-Bellman">
 				<div class="col-lg-6">
 					<br>
@@ -179,7 +179,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid padding">
+		<div class="container-fluid padding mauxam">
 			<div class="row padding slideanim amdi" id="Dijkstra">
 				<div class="col-md-12 col-lg-6 text-justify">
 					<p>
@@ -203,7 +203,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid padding">
+		<div class="container-fluid padding mauxam">
 			<div class="row padding slideanim" id="Ford-Bellman">
 				<div class="col-lg-6">
 					<br>
@@ -219,7 +219,7 @@
 				</div>
 			</div>
 		</div><br>
-		<div class="container-fluid padding">
+		<div class="container-fluid padding mauxam">
 			<div class="row padding slideanim" id="Ford-Bellman">
 				<div class="col-lg-6">
 					<br>
@@ -236,7 +236,7 @@
 		</div><br>
 		<hr>
 
-	<!-- my team -->
+<!-- my team -->
 		<div class="container-fluid padding" id="LichSu">
 			<div class="row welcom text-center slideanim">
 				<div class="col-12">
@@ -249,7 +249,8 @@
 			<div class="row padding slideanim">
 				<div class="col-12 col-sm-6 col-md-4">
 					<div class="card">
-						<img src="img/Chuong.jpg" class="card-img-top img-fluid">
+						<img src="img/Chuong2
+						.jpg" class="card-img-top img-fluid">
 						<div class="card-body">
 							<h4 class="card-title text-center">Nguyễn Hoàng Chương</h4>
 							<a href="http://ltdtagu12mem.atwebpages.com/info/Chuong.html" class="btn btn-outline-secondary" id="HS" target="_blank">See profile</a>
@@ -258,7 +259,7 @@
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
 					<div class="card">
-						<img src="img/Huong.jpg" class="card-img-top img-fluid">
+						<img src="img/Huong2.jpg" class="card-img-top img-fluid">
 						<div class="card-body">
 							<h4 class="card-title text-center">Nguyễn Mai Hương</h4>
 							<a href="http://ltdtagu12mem.atwebpages.com/info/Huong.html" class="btn btn-outline-secondary" id="HS" target="_blank">See profile</a>
@@ -267,7 +268,7 @@
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
 					<div class="card">
-						<img src="img/Hang.jpg" class="card-img-top img-fluid">
+						<img src="img/Hang2.jpg" class="card-img-top img-fluid">
 						<div class="card-body">
 							<h4 class="card-title text-center">Nguyễn Thị Lệ Hằng</h4>
 							<a href="http://ltdtagu12mem.atwebpages.com/info/Hang.html" class="btn btn-outline-secondary" id="HS" target="_blank">See profile</a>

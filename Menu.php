@@ -36,7 +36,7 @@
     </div>
     <div class="copyright">
         <p>CopyRight © Code of TW</p>
-        <p> <a href="http://ltdtagu12mem.atwebpages.com/info/Hang.html">@Hằng </a> <a href="http://ltdtagu12mem.atwebpages.com/info/Huong.html">@Hương </a> <a href="http://ltdtagu12mem.atwebpages.com/info/Chuong.html">@Chương</a>
+        <p> <a href="http://ltdtagu12mem.atwebpages.com/info/Hang.html" target="_blank">@Hằng </a> <a href="http://ltdtagu12mem.atwebpages.com/info/Huong.html" target="_blank">@Hương </a> <a href="http://ltdtagu12mem.atwebpages.com/info/Chuong.html" target="_blank">@Chương</a>
     </div>
 </div>
 
