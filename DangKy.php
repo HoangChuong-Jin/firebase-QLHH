@@ -53,6 +53,7 @@
             // Signed in 
             var user = userCredential.user;
             // ...
+            window.alert("Đăng ký thành công.");
             location.href='DangNhap.php';
           })
           .catch((error) => {
